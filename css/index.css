@@ -1,0 +1,142 @@
+/* .qie{
+display: block;
+margin-left: 100px;
+
+} */
+.narbar-brand .qie{
+margin-left: 350px;
+}
+.narbar-brand .title{
+    margin-left: 50px;
+    margin-right: 400px;
+    }
+.mid{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.breadcrumb > li + li::before{
+    content: ">";
+}
+.btn-toolbar .page-main{
+    width: 1280px;
+    height: auto;
+}
+.list-filter{
+    margin-bottom: 10px;
+    padding: 12px 50px 0;
+    background: #f6f5f5e5;
+    height: auto;
+}
+.fltbox{
+    position: relative;
+    width: 100%;
+    padding: 11px 0;
+    max-height: 90px;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.fltbox dl{
+    width: 1115px;
+    height: auto;
+    font-size: 14px;
+}
+.fltbox dl dt{
+    float: left;
+    color: #999;
+    line-height: 30px;
+}
+.fltbox dl dd{
+    float: left;
+    padding: 0 20px;
+    color: #666;
+    line-height: 30px;
+    cursor: pointer;
+}
+.fltbox dl .cur{
+    color: #333;
+    font-weight: bold;
+}
+.good-list{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: #f6f5f5e5;
+}
+.good-list ul{
+    margin-left: 40px;
+    width: 1208px;
+    height: auto;
+}
+.good-list ul li{
+    margin: 0 10px 20px;
+
+    float: left;
+    width: 280px;
+    height: 396px;
+    border: 1px solid #eee;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    /* background: #f6f5f5e5; */
+}
+p{
+ margin-left: 20px;
+    z-index: 1;
+   position: absolute;
+}
+.good-list ul li .good-info{
+    margin-top: 18px;
+    text-align: center;
+    overflow: hidden;
+}
+.good-list ul li .good-name{
+    font-size: 14px;
+    color: #444;
+}
+.good-list ul li p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 24px;
+    margin-left: 100px;;
+}
+.good-list ul li .good-pri{
+    line-height: 25px;
+    font-size: 16px;
+    color: #f7545f;
+}
+.good-list ul li .jd-union{
+    color: #666;
+    font-size: 12px;
+}
+.good-list ul li .old-pri{
+    padding-left: 8px;
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+a{
+    text-decoration: none;
+}
+*{
+    outline: none;
+}
+.good-list ul li:hover{
+    bottom: 2px;
+    box-shadow:  0 6px  8px 6px #cfcfcf;
+}
+
+.pagination-box{
+   margin-left: 500px;
+}
+.delect{
+margin-left: 100px;
+font-size: 15px;
+}
+.modal-body .btn-success{
+float: right;
+margin-top: -35px;
+}
+#search_itemname{
+width: 450px;
+}

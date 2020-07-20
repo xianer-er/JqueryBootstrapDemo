@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv='refresh' content='5'> -->
+    <title>商品列表-天涯明月刀商城</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--头部S  -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="narbar-brand">
+                    <img class="qie" src="images/企鹅.png" width="158px" height="60px">
+                    <img class="title" src="images/logo-wuxia-white.png" alt="" width="150px" height="50px"></a>
+            </div>
+        </div>
+    </nav>
+    <!-- 头部E -->
+    <!-- 商品内容S -->
+    <div class="mid">
+        <div class="page-main">
+            <div class="list-filter">
+                <div class="fltbox">
+                    <dl id="dj_class_ul">
+                        <dt>分类：</dt>
+                        <dd class="all">全部</dd>
+                        <dd id="option1">数码3C</dd>
+                        <dd id="option2">服饰配饰</dd>
+                    </dl>
+                </div>
+
+            </div>
+        </div>
+        <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1">增加宝贝</button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-change" data-toggle="modal"
+                    data-target="#myModal2">修改宝贝信息</button>
+            </div>
+        </div>
+
+        <div class="good-list">
+            <ul class="clearfix" id="dj_good_ul">
+                <p>暂时没有宝贝上新！</p>
+            </ul>
+
+        </div>
+    </div>
+    <!-- 模态框S -->
+    <div>
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModallabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">
+                            增加宝贝
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="name">选择宝贝种类</label>
+                                <select class="form-control">
+                                    <option class="option1">数码3C</option>
+                                    <option class="option2">服饰配饰</option>
+                                </select>
+                                <div class="form-group">
+                                    <label for="name">宝贝名称</label>
+                                    <input type="text" class="form-control" id="itemname" placeholder="请输入宝贝名称">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">宝贝现价</label>
+                                    <input type="text" class="form-control" id="nowprice" placeholder="请输入宝贝现价">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">宝贝原价</label>
+                                    <input type="text" class="form-control" id="preprice" placeholder="请输入宝贝原价">
+                                </div>
+                                <div class="fprm-group">
+                                    <label for="inputfile">上传宝贝图片</label>
+                                    <input type="file" id="inputfile1">
+                                </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary btn-primary-add">
+                            提交
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModallabel2"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel">
+                            修改宝贝信息
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" id="search_itemname" placeholder="请输入要修改的宝贝名称">
+                                <button type="button" class="btn btn-success btn-search">搜索宝贝</button>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">选择宝贝种类</label>
+                                <select class="form-control">
+                                    <option class="option1">数码3C</option>
+                                    <option class="option2">服饰配饰</option>
+                                </select>
+                                <div class="form-group">
+                                    <label for="name">修改宝贝名称</label>
+                                    <input type="text" class="form-control shopname" id="itemname"
+                                        placeholder="请输入宝贝名称">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">修改宝贝现价</label>
+                                    <input type="text" class="form-control changenprice" id="nowprice"
+                                        placeholder="请输入宝贝现价">
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">修改宝贝原价</label>
+                                    <input type="text" class="form-control changepprice" id="preprice"
+                                        placeholder="请输入宝贝原价">
+                                </div>
+                                <div class="fprm-group">
+                                    <label for="inputfile">修改宝贝图片</label>
+                                    <input type="file" id="inputfile">
+                                </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary btn-primary-change">
+                            提交
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- 模态框E -->
+    <!-- 商品内容E -->
+
+</body>
+<script type="text/javascript" src="index.js">
+</script>
+
+</html>
